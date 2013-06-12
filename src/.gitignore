@@ -1,0 +1,7 @@
+*.py[co]
+*~
+core/settings.py
+tmp/
+core/build
+core/static/.webassets-cache/
+core/static/assets/

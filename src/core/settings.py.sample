@@ -1,0 +1,72 @@
+# Mode
+DEVELOPMENT = True
+DEBUG = True
+
+# Title of the site
+SITE_TITLE = "Plivo XML Playground"
+
+# Site Domain
+DOMAIN_NAME = ""
+
+# Google analytics code UA-XXXXXX-X
+GA_CODE = ""
+
+# Secret key
+SECRET_KEY = "secret key here"
+
+# Timezone
+TIMEZONE = "Asia/Calcutta"
+
+# Application Settings
+APPLICATION_HOST = "0.0.0.0"
+APPLICATION_PORT = 5000
+
+# Admins
+ADMINS = ["hello@plivo.com"]
+
+# Logging
+ENABLE_LOGGING = not DEBUG
+
+# Flask Web Assets Settings
+ASSETS_DEBUG = DEBUG
+
+# Plivo Configurations
+PLIVO_AUTH_ID = ""
+PLIVO_AUTH_TOKEN = ""
+
+# Plivo Endpoint credentials
+PLIVO_USERNAME = ""
+PLIVO_PASSWORD = ""
+
+# Redis Configurations
+REDIS_HOST = "localhost"
+REDIS_PORT = 6379
+REDIS_DB = 0
+
+# LocalTunnel Settings
+LOCALTUNNEL_PREFIX = ""  # example: http://<prefix>.localtunnel.com
+
+# PlivoXML preset examples
+PLIVOXML_EXAMPLES = [
+    {
+        "active": True,
+        "name": "Play",
+        "xml": "<Response>\
+    <Play>https://s3.amazonaws.com/plivocloud/Trumpet.mp3</Play>\
+  </Response>"
+    },
+    {
+        "active": False,
+        "name": "Speak 1",
+        "xml": "<Response>\
+    <Speak>Go Green, Go Plivo.</Speak>\
+  </Response>"
+    },
+    {
+        "active": False,
+        "name": "Speak 2",
+        "xml": " <Response>\
+    <Speak loop='3'>Wow</Speak>\
+  </Response>"
+    },
+]
